@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #040806;
+  color: #86efac;
+  font-family: 'JetBrains Mono', monospace;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CRT Phosphor Glow Utilities */
+.text-glow-green {
+  text-shadow: 0 0 4px rgba(74, 222, 128, 0.65), 0 0 10px rgba(34, 197, 94, 0.4);
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 4px rgba(245, 158, 11, 0.65), 0 0 10px rgba(217, 119, 6, 0.4);
+}
+
+.border-glow-green {
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.2), inset 0 0 8px rgba(34, 197, 94, 0.1);
+}
+
+/* Authentic CRT Scanline Raster Overlay */
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(34, 197, 94, 0.02),
+    rgba(0, 0, 0, 0.02),
+    rgba(34, 197, 94, 0.02)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Apollo Console Custom Hairline Scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #050d08;
+}
+::-webkit-scrollbar-thumb {
+  background: #166534;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22c55e;
+}

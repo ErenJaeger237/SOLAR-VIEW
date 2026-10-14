@@ -1,0 +1,6 @@
+{
+  "name": "Solar Orbit - 3D N-Body Solar System & Gravity Simulator",
+  "description": "An interactive 3D simulation of our Solar System with strict N-body Newtonian gravity, real-time collision merging, planetary telemetry, and a customizable celestial physics sandbox.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
